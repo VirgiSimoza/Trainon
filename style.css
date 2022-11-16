@@ -1,73 +1,86 @@
+@import url('https://fonts.cdnfonts.com/css/amagro');
+/* @import url('https://fonts.cdnfonts.com/css/josefin-sans'); 
+font-family: 'Josefin Sans', sans-serif; */
+
+html{
+    scroll-behavior: smooth;
+}
 *{
 margin: 0;
-padding: o;
+padding: 0;
 box-sizing: border-box;
- 
-}
-
-body{
-
-font-family: 'Uchen', serif;
 
 }
 
-h1{ font-size: 90px;
-color: #e6e2ee;}
-h2{ font-size: 70px;}
-h3{ font-size: 50px;}
+
+h2{ font-size: 30px;
+    color:#202020;
+    font-family: 'Amagro', sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    }
+
+
+h3{ font-size: 50px;
+    color:#202020;
+    font-family: 'Amagro', sans-serif;
+   
+}
 p{font-size: 20px;}
-ul{list-style: none;}
-li{ font-size: 25px;}
 
 button{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     padding: 10px 20px;
-    border-radius: 25px;
-    border: 1px solid black ;
-    box-shadow: 1px 1px black;
-    color: rgb(51, 51, 46); 
-       
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-    
+    border-radius: 20px;
+    background-color: #4f9ed0;
+    border: none;
+    color:#d1f3ec ;
+
 }
 
-button:hover{ background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
-}
-.conteiner{
-    max-width: 1400px;
-    margin: auto;
-}
+button:hover { 
+    background-color: #eb5187;
+    cursor: pointer;
+} 
+
 header{
     display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-image: linear-gradient(120deg, #f1f2f2 0%, #d1f3ec 100%);
     
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
-.conteiner{
+.container{
     display: flex;
-    margin-right: 20px;
+    margin-right:20px;
     margin: 0;
-    height: 100px;
-}
-header nav{
-
-    padding-top: 20px;
-    font-size: 50px;  
-    text-decoration: none;
+    height: 35px;
 }
 
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 20px;
+    }
 
+
+ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    }
 
 header a {
-    display: flex;
+
     text-decoration: none;
     padding-right: 20px,30px;
     font-weight: bold;
-    color: #a18cd1;  
-    text-align: center; 
-    align-items: center;  
-    
-}
+    color: #202020 ;
+    text-align: center;
+    } 
+ 
 #hero {
     display: flex;
     text-align: center;
@@ -75,10 +88,80 @@ header a {
     flex-direction: column;
     justify-content: center;
     height: 600px;
-    background-image: url(assets/Imagen_6.jpg);
+    background-image: url(assets/Imagen_9.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center  ;    
+    background-position: center center; }
+
+ h1 { font-size: 120px;
+    color:#202020;
+    font-family: 'Amagro', sans-serif;
+    text-decoration: underline;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px;
+    }
+
+#nuestros-cursos {
+    background-color: #f1f2f2;
+    text-align: center;
+}
+
+.container3{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+ }
+
+.cursos{
+    display: flex;
+    justify-content: center;
+}
+
+.cartas{
+    width: 100%;
+    font-size:35px;
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #d1f3ec;
+    }
+
+img{ 
+    /* height: 400px; */
+    max-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    margin: auto;
+    display: block;
 }
 
 
+#nuestros-produtos .container2{
+    max-width: 1200px;
+    width: 100%;
+
+  }
+#nuestros-productos{
+    background-color: #f1f2f2;
+    margin-top: 20px;
+    text-align: center;
+      
+
+}
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+
+}
+.galeria img{
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 30px;
+
+}
