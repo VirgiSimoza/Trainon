@@ -18,7 +18,7 @@ h2{ font-size: 30px;
     font-family: 'Amagro', sans-serif;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px;
-    }
+}
 
 
 h3{ font-size: 50px;
@@ -81,25 +81,37 @@ header a {
     text-align: center;
     } 
  
-#hero {
+/* #hero {
     display: flex;
     text-align: center;
     align-content: center;
     flex-direction: column;
     justify-content: center;
     height: 600px;
-    background-image: url(assets/Imagen_9.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center; }
+    background-position: center center; } */
+#hero{
+    position: relative;
+    height: 100vp;
+   
+}
+#hero video{
+   position: absolute;
+   height: 100vp;
+   width: 100%;
+   position: relative;
 
- h1 { font-size: 120px;
+ }
+
+
+#hero h1 { font-size: 120px;
     color:#202020;
     font-family: 'Amagro', sans-serif;
     text-decoration: underline;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 3px;
-    }
+     }
 
 #nuestros-cursos {
     background-color: #f1f2f2;
@@ -128,7 +140,6 @@ header a {
     }
 
 img{ 
-    /* height: 400px; */
     max-width: 100%;
     max-width: 100%;
     object-fit: cover;
