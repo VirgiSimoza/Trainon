@@ -1,5 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/amagro');
-/* @import url('https://fonts.cdnfonts.com/css/josefin-sans'); 
+/* @import url('https://fonts.cdnfonts.com/css/josefin-sans');
 font-family: 'Josefin Sans', sans-serif; */
 
 html{
@@ -9,23 +9,29 @@ html{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-
+}
+body{
+    background-color: #f1f2f2;
 }
 
-
-h2{ font-size: 30px;
+h2{ font-size: 20px;
     color:#202020;
     font-family: 'Amagro', sans-serif;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px;
 }
 
 
-h3{ font-size: 50px;
+h3{ font-size: 45px;
     color:#202020;
     font-family: 'Amagro', sans-serif;
-   
 }
+
+h4{ font-size: 20px;
+    color:#202020;
+    font-family: 'Amagro', sans-serif;
+    padding-top: 10px;
+}
+
+
 p{font-size: 20px;}
 
 button{
@@ -36,72 +42,71 @@ button{
     background-color: #4f9ed0;
     border: none;
     color:#d1f3ec ;
-
 }
 
-button:hover { 
+button:hover {
     background-color: #eb5187;
     cursor: pointer;
-} 
+}
 
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     text-align: center;
     background-image: linear-gradient(120deg, #f1f2f2 0%, #d1f3ec 100%);
-    
 }
-.container{
-    display: flex;
-    margin-right:20px;
-    margin: 0;
-    height: 35px;
+@media (max-width: 475px){
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
-header nav {
+.logo-container{
+    height: 100%;
+    width: 60px;
+    align-self: center;
+}
+
+
+nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     font-weight: bold;
     font-size: 20px;
-    }
-
+    align-self: center;
+}
 
 ul li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 30px;
+}
+
+@media (max-width: 475px){
+    ul li {
+        display: block;
+        padding: 5px 0px;
     }
+}
+
 
 header a {
-
     text-decoration: none;
     padding-right: 20px,30px;
     font-weight: bold;
     color: #202020 ;
     text-align: center;
-    } 
- 
-/* #hero {
-    display: flex;
-    text-align: center;
-    align-content: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 600px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; } */
+    }
+
+
 #hero{
     position: relative;
     height: 100vp;
-   
 }
-#hero video{
-   position: absolute;
-   height: 100vp;
-   width: 100%;
-   position: relative;
 
+#hero video{
+   height: 100%;
+   width: 100%;
  }
 
 
@@ -111,7 +116,7 @@ header a {
     text-decoration: underline;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 3px;
-     }
+}
 
 #nuestros-cursos {
     background-color: #f1f2f2;
@@ -127,10 +132,12 @@ header a {
 .cursos{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .cartas{
-    width: 100%;
+    width: 400px;
     font-size:35px;
     padding: 10px 10px;
     margin: 10px;
@@ -139,7 +146,7 @@ header a {
     background: #d1f3ec;
     }
 
-img{ 
+img{
     max-width: 100%;
     max-width: 100%;
     object-fit: cover;
@@ -152,27 +159,61 @@ img{
     max-width: 1200px;
     width: 100%;
 
-  }
+}
 #nuestros-productos{
     background-color: #f1f2f2;
     margin-top: 20px;
     text-align: center;
-      
-
 }
 
 .galeria{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-  
-
 }
 .galeria img{
-    width: 250px;
-    height: 200px;
+    width: 310px;
+    height: 280px;
     margin: 10px;
     overflow: hidden;
     border-radius: 30px;
+}
 
+.container-final{
+    width: 100%;
+    height: 100%;
+    background-color: #d1f3ec;
+}
+
+.container-final .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+
+.container-final .grupo{
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 32px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: #4f9ed0;
+
+}
+footer a:hover { color: #eb5187;
+    cursor: pointer;
+}
+
+.container-final .grupo-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
